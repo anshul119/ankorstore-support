@@ -1,6 +1,8 @@
 # Ankorstore Support chat
 
-This project consists of a Flask server and a React frontend app, both of which are containerized using Docker. To run it locally you can run the following command:
+This project consists of a Flask server and a React frontend app, both of which are containerized using Docker. Before running the project, make sure you have `.env` file configured. Please make a copy of `.env.example` locally (with the name `.env`) and configure your `OPENAI_API_KEY`.
+
+To run the stack locally you can run the following command:
 
 ```
 docker-compose build
