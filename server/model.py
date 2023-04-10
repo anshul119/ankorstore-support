@@ -1,8 +1,10 @@
 import pickle
+from dotenv import load_dotenv
 import os
 from llama_index import GPTSimpleVectorIndex
 
-os.environ['OPENAI_API_KEY'] = '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'
+load_dotenv()
+print(os.environ['OPENAI_API_KEY'])
 
 from llama_index import download_loader
 download_loader("GithubRepositoryReader")

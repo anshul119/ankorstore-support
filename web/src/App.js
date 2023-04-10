@@ -29,7 +29,7 @@ function InputOutputComponent() {
 
   return (
     <div className="wrapper content">
-      <h1 className="has-text-centered">Welcome to Ankorstore Integration support 🤓 🛠️</h1>
+      <h1 className="has-text-centered">Welcome to Ankorstore Integration support <span role="img">🤓 🛠️</span></h1>
       <form className="form" onSubmit={handleButtonClick}>
         <label className="label">How can I help?</label>
         <div className="field is-grouped">  

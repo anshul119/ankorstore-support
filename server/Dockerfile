@@ -2,7 +2,7 @@
 FROM python:3.9
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /app/server
 
 # Copy the requirements file and install the dependencies
 COPY requirements.txt .
@@ -12,7 +12,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Set the environment variable for the Flask app
-ENV FLASK_APP=server.py
+ENV FLASK_APP=app.py
 
 # Expose the port that the server will run on
 EXPOSE 5000

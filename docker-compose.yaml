@@ -5,8 +5,15 @@ services:
     build: ./server
     ports:
       - '5000:5000'
+    volumes:
+      - ./server:/app/server
+    env_file:
+      - .env
 
   frontend:
     build: ./web
     ports:
       - '3000:3000'
+    stdin_open: true
+    volumes:
+      - ./web:/app/web

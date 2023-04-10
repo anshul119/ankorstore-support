@@ -2,7 +2,7 @@
 FROM node:14-alpine
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /app/web
 
 # Copy the package and lock files and install the dependencies
 COPY package*.json ./
@@ -18,4 +18,4 @@ RUN npm run build
 EXPOSE 3000
 
 # Start the React app
-CMD ["npm", "start"]
+CMD npm start
