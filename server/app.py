@@ -13,10 +13,6 @@ limiter = Limiter(
 )
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
-@app.route('/api/hello', methods=['GET'])
-def handle_hello():
-    return "Hello, World!"
-
 @app.route('/api/ask', methods=['POST'])
 def handle_ask():
     payload = request.get_json()

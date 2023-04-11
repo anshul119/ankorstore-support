@@ -4,7 +4,6 @@ import os
 from llama_index import GPTSimpleVectorIndex
 
 load_dotenv()
-print(os.environ['OPENAI_API_KEY'])
 
 from llama_index import download_loader
 download_loader("GithubRepositoryReader")
